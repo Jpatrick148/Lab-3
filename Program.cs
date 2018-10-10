@@ -21,20 +21,24 @@ namespace Lab3
                 yourNumber = Console.ReadLine();
                 number = int.Parse(yourNumber);
 
-                while (number >= 1 && number <= 100)
+                if (number >= 1 && number <= 100)
                 {
 
                     if (number % 2 >= 1)
                     {
-                        Console.WriteLine(name + " The number is odd.");
+                        Console.WriteLine(name + number + " is odd.");
                     }
                     else if (number < 25)
                     {
-                        Console.WriteLine(name + " The number is even and less than 25");
+                        Console.WriteLine(name + number + " is even and less than 25");
+                    }
+                    else if (number <= 26 || number >=60)
+                    {
+                        Console.WriteLine(name + " the number is even");
                     }
                     else
                     {
-                        Console.WriteLine(name + " The number is even.");
+                        Console.WriteLine(name + number + " is even.");
                     }
                 }
 
